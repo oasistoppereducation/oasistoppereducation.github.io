@@ -1,145 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oasis Topper Education - Complete NEET Preparation Apps (Class 11 & 12)</title>
+    <title>Oasis Topper Education - Master NEET 11th & 12th</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandNavy: '#0A192F',
+                        brandBlue: '#0F2B48',
+                        brandTeal: '#0D9488',
+                        brandEmerald: '#059669',
+                        brandGold: '#D97706',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-teal-500 selection:text-white">
 
-    <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-bold text-xl shadow-md shadow-emerald-600/20">
-                    O
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <img src="Dv logo512.png" alt="Oasis Topper Education Logo" class="w-12 h-12 rounded-full border border-amber-500/30 shadow-md">
+                <div>
+                    <span class="font-extrabold text-lg text-white tracking-tight block">OASIS TOPPER</span>
+                    <span class="text-xs text-amber-400 font-semibold uppercase tracking-wider block -mt-1">Education</span>
                 </div>
-                <span class="font-bold text-lg text-slate-900 tracking-tight">Oasis Topper Education</span>
             </div>
-            <a href="#apps" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-full text-sm font-medium transition shadow-sm hover:shadow">
-                Explore Apps
+            <a href="#download-apps" class="bg-gradient-to-r from-teal-500 to-emerald-600 hover:from-teal-600 hover:to-emerald-700 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition shadow-lg shadow-teal-500/20 flex items-center gap-2">
+                <i class="fa-brands fa-google-play"></i> Get Apps
             </a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="py-16 md:py-24 px-6 text-center max-w-4xl mx-auto">
-        <span class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase border border-emerald-100 mb-6">
-            <i class="fa-solid fa-graduation-cap"></i> Complete NEET Preparation Series
-        </span>
-        <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            Master NEET NCERT Syllabus for Class 11 & 12
-        </h1>
-        <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto leading-relaxed">
-            Build a rock-solid foundation for your medical entrance exam with chapter-wise solved NCERT exercises, audio notes, and full-length mock tests tailored for 11th and 12th Standard aspirants.
-        </p>
-    </section>
-
-    <!-- App Showcase Section -->
-    <section id="apps" class="pb-16 px-6">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-            
-            <!-- Card 1: NEET 11th Std App -->
-            <div class="bg-white border border-slate-200/80 rounded-3xl p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition">
-                <div>
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-16 h-16 bg-emerald-600 rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-emerald-600/20">
-                            11th
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold text-slate-900">NEET 11ᵗʰ Std</h2>
-                            <p class="text-xs text-slate-500">By Oasis Topper Education</p>
-                        </div>
-                    </div>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                        Designed specifically for Class 11 medical aspirants. Strengthen your fundamentals in Physics, Chemistry, and Biology with NCERT-based MCQs and complete solved exercises.
-                    </p>
-                    <ul class="space-y-2 text-sm text-slate-700 mb-8">
-                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-600"></i> Solved 11th NCERT Exercises</li>
-                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-600"></i> Audio Notes for On-The-Go Revision</li>
-                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-600"></i> 20 High-Yield Quizzes per Chapter</li>
-                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-600"></i> 50 Full-Length Mock Tests</li>
-                    </ul>
+    <!-- Hero Banner Section -->
+    <section class="relative pt-12 pb-20 px-6 overflow-hidden bg-gradient-to-b from-slate-900 via-brandNavy to-slate-900">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="inline-flex items-center gap-2 bg-amber-500/10 text-amber-400 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase border border-amber-500/20">
+                    <i class="fa-solid fa-star"></i> Empowering Class 11 & 12 Aspirants
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
+                    Master NEET with <span class="bg-gradient-to-r from-teal-400 via-emerald-400 to-amber-400 bg-clip-text text-transparent">Complete NCERT</span> Prep
+                </h1>
+                <p class="text-slate-300 text-lg leading-relaxed">
+                    Designed specifically for medical aspirants. Build deep conceptual clarity, access audio notes, solve chapter-wise NCERT exercises, and test yourself with 50+ full-length mock exams.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#download-apps" class="bg-gradient-to-r from-teal-500 to-emerald-500 hover:opacity-95 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-teal-500/20 transition flex items-center gap-3">
+                        <i class="fa-solid fa-graduation-cap text-xl"></i> Explore Applications
+                    </a>
                 </div>
-                <a href="https://play.google.com/store/apps/details?id=com.mpi.oasisneet11" target="_blank" class="w-full flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-800 text-white py-3.5 rounded-xl font-medium transition shadow-sm">
-                    <i class="fa-brands fa-google-play text-emerald-400 text-lg"></i>
-                    <span>Download 11th Std App</span>
-                </a>
             </div>
-
-            <!-- Card 2: NEET 12th Std App -->
-            <div class="bg-white border border-slate-200/80 rounded-3xl p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition">
-                <div>
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-blue-600/20">
-                            12ᵗʰ
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold text-slate-900">NEET 12ᵗʰ Std</h2>
-                            <p class="text-xs text-slate-500">By Oasis Topper Education</p>
-                        </div>
-                    </div>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                        The ultimate companion for 12th-grade board and NEET preparation. Tackle high-weightage topics with comprehensive revision materials and practice papers.
-                    </p>
-                    <ul class="space-y-2 text-sm text-slate-700 mb-8">
-                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-blue-600"></i> Solved 12th NCERT Exercises</li>
-                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-blue-600"></i> Audio Notes & Formula Guides</li>
-                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-blue-600"></i> Assertion & Reasoning Questions</li>
-                        <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-blue-600"></i> Full-Length Exam Pattern Mocks</li>
-                    </ul>
-                </div>
-                <a href="https://play.google.com/store/apps/details?id=com.mpi.oasisneet12" target="_blank" class="w-full flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-800 text-white py-3.5 rounded-xl font-medium transition shadow-sm">
-                    <i class="fa-brands fa-google-play text-blue-400 text-lg"></i>
-                    <span>Download 12th Std App</span>
-                </a>
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-teal-500 to-amber-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+                <img src="header image .png" alt="Oasis Topper Students Banner" class="relative rounded-2xl border border-slate-700/60 shadow-2xl w-full object-cover">
             </div>
-
         </div>
     </section>
 
-    <!-- Key Features Section -->
-    <section class="py-16 bg-white border-y border-slate-100">
-        <div class="max-w-6xl mx-auto px-6">
+    <!-- Complete Prep Showcase Banner -->
+    <section class="py-12 bg-slate-950 border-y border-slate-800/80 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="rounded-3xl overflow-hidden border border-teal-500/30 shadow-2xl relative">
+                <img src="header final.png" alt="NEET Ace Your Exam Features Banner" class="w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- App Downloads Section -->
+    <section id="download-apps" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Choose Your Preparation Track</h2>
+                <p class="text-slate-400 mt-3">Select your grade level app to access targeted NCERT materials, quizzes, and mock tests.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Class 11 App Card -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-3xl p-8 flex flex-col justify-between hover:border-teal-500/50 transition duration-300 shadow-xl relative overflow-hidden group">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-teal-500/10 rounded-full blur-2xl group-hover:bg-teal-500/20 transition"></div>
+                    <div>
+                        <div class="flex items-center gap-5 mb-6">
+                            <img src="icon.png" alt="NEET 11th App Icon" class="w-16 h-16 rounded-2xl shadow-lg border border-teal-500/30 object-cover">
+                            <div>
+                                <span class="text-xs text-amber-400 font-bold uppercase tracking-wider">Class 11 Focus</span>
+                                <h3 class="text-2xl font-bold text-white">NEET 11ᵗʰ Std</h3>
+                                <p class="text-xs text-slate-400">By Oasis Topper Education</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Master core fundamentals of 11th Standard Physics, Chemistry, and Biology with NCERT textbook solutions, daily practice quizzes, and audio notes.
+                        </p>
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-teal-400"></i> Solved 11th NCERT Exercises</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-teal-400"></i> 20 High-Yield Quizzes per Chapter</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-teal-400"></i> Hands-Free Audio Lessons</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-teal-400"></i> 50 Full-Length Exam Mock Tests</li>
+                        </ul>
+                    </div>
+                    <a href="https://play.google.com/store/apps/details?id=com.mpi.oasisneet11" target="_blank" class="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white font-bold py-4 rounded-xl shadow-lg transition">
+                        <i class="fa-brands fa-google-play text-xl"></i> Download NEET 11ᵗʰ App
+                    </a>
+                </div>
+
+                <!-- Class 12 App Card -->
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-3xl p-8 flex flex-col justify-between hover:border-amber-500/50 transition duration-300 shadow-xl relative overflow-hidden group">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-amber-500/10 rounded-full blur-2xl group-hover:bg-amber-500/20 transition"></div>
+                    <div>
+                        <div class="flex items-center gap-5 mb-6">
+                            <img src="icon.png" alt="NEET 12th App Icon" class="w-16 h-16 rounded-2xl shadow-lg border border-amber-500/30 object-cover">
+                            <div>
+                                <span class="text-xs text-amber-400 font-bold uppercase tracking-wider">Class 12 Focus</span>
+                                <h3 class="text-2xl font-bold text-white">NEET 12ᵗʰ Std</h3>
+                                <p class="text-xs text-slate-400">By Oasis Topper Education</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Tackle 12th-grade board and high-weightage NEET topics seamlessly with deep Assertion & Reasoning practice, formulas, and revision materials.
+                        </p>
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-amber-400"></i> Solved 12th NCERT Exercises</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-amber-400"></i> Assertion & Reasoning Special Practice</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-amber-400"></i> Audio Formula & Concept Guides</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-amber-400"></i> High-Weightage Mock Test Series</li>
+                        </ul>
+                    </div>
+                    <a href="https://play.google.com/store/apps/details?id=com.mpi.oasisneet12" target="_blank" class="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-white font-bold py-4 rounded-xl shadow-lg transition">
+                        <i class="fa-brands fa-google-play text-xl"></i> Download NEET 12ᵗʰ App
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Highlights Grid -->
+    <section class="py-20 bg-slate-950 border-t border-slate-800 px-6">
+        <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900">Why Aspirants Choose Oasis Topper</h2>
-                <p class="text-slate-600 mt-2">Built to simplify complex medical entrance preparation.</p>
+                <h2 class="text-3xl font-extrabold text-white">Key Features Built for Toppers</h2>
+                <p class="text-slate-400 mt-2">Everything you need to boost speed, accuracy, and confidence.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-book-open"></i>
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
+                    <div class="w-12 h-12 bg-teal-500/10 text-teal-400 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-book-open-reader"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">100% NCERT Aligned</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Every note, question, and exercise strictly follows the latest NCERT curriculum for NEET Physics, Chemistry, and Biology.
+                    <h3 class="text-xl font-bold text-white mb-2">100% NCERT Aligned</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Every note, exercise, and mock question strictly adheres to the latest NCERT curriculum for Physics, Chemistry, and Biology.
                     </p>
                 </div>
 
-                <!-- Feature 2 -->
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-headphones"></i>
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-headphones-simple"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Audio Notes</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Listen to key concepts, formulas, and definitions hands-free during commutes or breaks to maximize memory retention.
+                    <h3 class="text-xl font-bold text-white mb-2">Audio Notes Feature</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Revise formulas and key definitions hands-free. Convert notes to audio and learn while commuting or resting.
                     </p>
                 </div>
 
-                <!-- Feature 3 -->
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-4">
-                        <i class="fa-solid fa-ban shadow-sm"></i>
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
+                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-bolt"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Ad-Free Experience</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Focus purely on your studies with zero distractions using an affordable one-time lifetime upgrade.
+                    <h3 class="text-xl font-bold text-white mb-2">Ad-Free Learning Option</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Focus purely on your goals. Upgrade once to remove all ads and study with zero distractions.
                     </p>
                 </div>
             </div>
@@ -147,13 +187,17 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-100 py-12 px-6 text-center text-slate-500 text-sm">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+    <footer class="bg-slate-900 border-t border-slate-800 py-12 px-6 text-center text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <img src="Dv logo512.png" alt="Oasis Topper Logo" class="w-8 h-8 rounded-full">
+                <span class="text-white font-semibold">Oasis Topper Education</span>
+            </div>
             <div>
                 © 2026 Oasis Topper Education. All rights reserved.
             </div>
             <div class="flex gap-6">
-                <a href="mailto:oasistopper@gmail.com" class="hover:text-slate-800 transition">Contact Support</a>
+                <a href="mailto:oasistopper@gmail.com" class="text-slate-400 hover:text-amber-400 transition"><i class="fa-solid fa-envelope mr-1"></i> Contact Support</a>
             </div>
         </div>
     </footer>
